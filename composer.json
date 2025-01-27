@@ -1,0 +1,35 @@
+{
+  "name": "ubxty/ubx-ua-parser",
+  "description": "Comprehensive User Agent parser for Laravel applications",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "UBXTY",
+      "email": "info@ubxty.com",
+      "homepage": "https://ubxty.com/"
+    }
+  ],
+  "homepage": "https://ubxty.com/",
+  "require": {
+    "php": "^7.3|^8.0",
+    "illuminate/support": "^8.0|^9.0|^10.0",
+    "jenssegers/agent": "^2.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ubxty\\UAParser\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Ubxty\\UAParser\\UAParserServiceProvider"
+      ],
+      "aliases": {
+        "UAParser": "Ubxty\\UAParser\\Facades\\UAParser"
+      }
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

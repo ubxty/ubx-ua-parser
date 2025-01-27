@@ -1,0 +1,35 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore log files and temporary files
+*.log
+*.tmp
+
+# Composer dependencies and lock file (should not be ignored in packages)
+# /vendor/
+
+# Ignore environment and IDE-specific files
+.env
+.idea/
+.vscode/
+*.swp
+
+# Ignore node modules if any (not applicable to PHP packages, but included for safety)
+node_modules/
+
+# Ignore compiled or cache files (Laravel or PHP-specific cache)
+storage/
+bootstrap/cache/
+
+# Ignore test coverage or temporary build artifacts
+coverage/
+.phpunit.result.cache
+
+# Ignore any other temporary files
+*.bak
+*.backup
+*.swp
+
+# Ignore user-specific configuration files
+*.local
